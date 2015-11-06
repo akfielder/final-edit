@@ -1,0 +1,865 @@
+/* Style */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+font-family: "Open Sans", Arial, sans-serif;
+font-size: 14px;
+line-height: 1.3;
+text-align: left;
+color: #333333;
+}
+
+header {
+background: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 20;
+}
+
+
+h1 {
+float: left;
+line-height: 75px;
+width: 150px;
+}
+
+nav {
+float: right;
+}
+
+
+nav a {
+color: #333333;
+font-weight: 400;
+font-size: 18px;
+text-decoration: none;
+letter-spacing: 1px;
+padding: 10px 10px 10px 10px;
+display: inline-block;
+margin-top: 20px;
+ /*add after hover state added */
+transition: color 0.25s;
+}
+
+nav a:hover {
+color: #D30070;
+}
+
+
+.headernum {
+position: absolute;
+-webkit-transform: translateY(10px);
+-moz-transform: translateY(10px);
+-ms-transform: translateY(10px);
+transform: translateY(10px);
+left: 200px;
+}
+
+.headernum a {
+display: block;
+color: #333333;
+font-weight: 400;
+font-size: 14px;
+text-decoration: none;
+padding: 0 5px 0 5px;
+}
+
+.headernum a:hover {
+color: #D30070;
+}
+
+.social {
+	position: absolute;
+	-webkit-transform: translateY(50px);
+	-moz-transform: translateY(50px);
+	-ms-transform: translateY(50px);
+	transform: translateY(50px);
+	left: 200px;
+}
+.social img {
+display: inline;
+width: 30px;
+padding: 2px;
+}
+
+
+
+section {
+background-color: #E5E5E6;
+margin: auto;
+padding: 20px;
+
+}
+
+h2, h3 {
+font-size: 20px;
+font-weight: 700;
+margin: 30px 0 10px 0;
+color: #D30070;
+text-align: center;
+}
+
+p {
+padding: 0 130px 10px 130px;
+}
+
+.main-image {
+margin-top: 90px;
+}
+
+h2 {
+margin-top: 90px;
+}
+
+h5 {
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 10px;
+color: #7E7C7D;
+}
+
+
+.photo-rotation img {
+position: absolute;
+top: 20px;
+width: 630px;
+/*-webkit-transform: translateX(23%);
+-moz-transform: translateX(23%);*/
+
+/*only translate for normal version*/
+}
+
+/*To make the text appear on hover state*/
+
+.state a {
+/*First set position relative on the anchor tag to allow us to position elements within it*/
+position: relative;
+/*Set display block to get anything inside of the anchor tag to be full height*/
+display: block;
+}
+
+/*State-full class is what we will make appear on hover, it includes the background colour and text*/
+.state-full {
+/*dark background*/
+background: #7F7F7F;
+color: white;
+cursor: pointer;
+/*Make the span elements full height*/
+height: 100%;
+width: 100%;
+/*Apply position absolute to position the elements within the divs with position relative*/
+position: absolute;
+top: 0;
+left: 0;
+/*turn opacity to 0 to hide on hover*/
+opacity: 0;
+/*Make sure you add in vendor prefixes for transitions and transform properties*/
+-webkit-transition: opacity 500ms;
+-moz-transition: opacity 500ms;
+-o-transition: opacity 500ms;
+transition: opacity 500ms;
+}
+
+/*To style up the nested span tags and move text into the middle*/
+span.state-full span {
+position: absolute;
+top: 28%;
+left: 10%;
+width: 80%;
+font-size: 18px;
+
+text-align: center;
+}
+
+/*Make the background and text appear on hover by changing the opacity*/
+.state-full:hover {
+opacity: 1;
+}
+
+
+.writing {
+position:absolute;
+left: 10%;
+-webkit-transform: translateY(200%);
+-moz-transform: translateY(200%);
+-ms-transform: translateY(200%);
+transform: translateY(200%);
+z-index: 10;
+width: 450px;
+}
+
+
+.contact a {
+text-decoration: none;
+color: #444;
+/*To make nicer underline styles, use a small amount of padding and a border-bottom*/
+padding-bottom: 1px;
+border-bottom: solid 2px #444;
+}
+
+.speech {
+width: 50%;
+-webkit-transform: translateX(50%);
+-moz-transform: translateX(50%);
+-ms-transform: translateX(50%);
+transform: translateX(50%);
+}
+
+.testimonial{
+padding-top: 20px;
+text-align: center;
+}
+
+blockquote {
+text-align: center;
+font-size: 16px;
+}
+
+.quotename {
+text-align: center;
+font-size: 10px;
+padding-top: 10px;
+}
+
+.people img {
+width: 200px;
+border-radius: 100px;
+padding: 0 5px;
+}
+
+figure {
+display: inline-block;
+text-align: center;
+}
+
+.people {
+text-align: center;
+}
+
+figcaption {
+color: #D20070;
+padding-top: 10px;
+}
+
+.name h4 {
+display: inline-block;
+padding-top: 10px;
+font-size: 18px;
+color: #D30070;
+
+}
+
+.supplierslogo {
+margin-top: 20px;
+}
+
+h7 {
+font-size: 25px;
+color: #D30070;
+
+}
+
+
+
+.peopleinfo {
+margin-top: 20px;
+}
+
+
+
+form {
+width: 80%;
+margin: 20px auto 0 auto;
+}
+
+input, textarea {
+border: solid 1px;
+width: 100%;
+margin: 10px 0;
+padding: 10px;
+border-radius: 3px;
+}
+
+textarea {
+/*To stop our text area from resizing horizontally, we set the resize property to vertical*/
+resize: vertical;
+height: 150px;
+}
+
+/*To target our submit buttom specifically*/
+input[type="submit"] {
+background-color: #7F7F7F;
+color: #fff;
+float: right;
+width: 80px;
+cursor: pointer;
+}
+
+/*Remove blue glowing outline*/
+input:focus, textarea:focus {
+outline: 0;
+  border-color: #D30070;
+}
+
+input[type=submit]:hover {
+border-color: #D30070;
+}
+
+
+.subject {
+width: 48.5%;
+float: left;
+}
+
+.postcode {
+width: 48.5%;
+float: right;
+}
+
+.emailus {
+position: absolute;
+-webkit-transform: translateX(100px);
+-moz-transform: translateX(100px);
+-ms-transform: translateX(100px);
+transform: translateX(100px);
+}
+
+.emailsent {
+margin-top: 90px;
+}
+
+.emailtext {
+text-align: center;
+font-size: 15px;
+}
+
+.outside1 {
+width: 400px;
+margin-bottom: 30px;
+float: right;
+margin-top: 50px;
+}
+
+.outside2 {
+	width: 400px;
+	float: left;
+	margin-top: 50px;
+}
+
+.number {
+text-align: center;
+}
+
+.map {
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+}
+
+
+h6 {
+font-size: 16px;
+text-align: center;
+color: #D30070;
+padding: 10px 0;
+font-weight: bold;
+}
+
+ul {
+padding: 0 150px 20px 150px;
+}
+
+.bottom {
+padding-bottom: 20px;
+}
+
+.services {
+margin-top: 20px;
+}
+
+.infoservice {
+margin-bottom: 20px;
+}
+
+/*Footer*/
+
+
+.networking img {
+width: 60px;
+margin: 3px 1px;
+padding: 3px;
+}
+
+
+.networking {
+position: absolute;
+
+text-align: right;
+-webkit-transform: translateX(136%);
+-moz-transform: translateX(136%);
+-ms-transform: translateX(136%);
+transform: translateX(136%);
+text-align: center;
+margin-top: 20px
+}
+
+/*social media hover grow*/
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.3);
+}
+
+.footernum {
+float: left;
+margin-top: 20px;
+
+}
+
+.footernum a{
+text-decoration: none;
+padding: 2px;
+margin: 5px 3px;
+color: #333;
+font-size: 14px;
+display: block;
+}
+
+.privacy {
+float: right;
+margin: 10px 0;
+}
+
+.privacy a {
+text-decoration: none;
+margin: 0 5px;
+padding: 2px;
+color: #333;
+font-size: 10px;
+}
+
+.copyVAT {
+float: right;
+margin-top: 20px;
+}
+
+.copyVAT small {
+text-align: right;
+display: block;
+padding: 0 10px;
+font-size: 10px;
+margin: 10px 0;
+}
+
+
+footer a:hover {
+color: #D30070;
+}
+
+
+p {
+margin-bottom: 5px;
+}
+
+.centered {
+text-align: center;
+}
+
+
+.hometext h2 {
+margin-top: 15px;
+}
+
+.hometext {
+text-align: center;
+background-color: #E5E5E6;
+padding: 20px 20px 120px 20px;
+float: right;
+/*width: 33%;*/
+/*margin-top: 21px;*/
+max-height: 356px;
+}
+
+
+.video {
+text-align: center;
+padding-top: 20px;
+}
+
+.supplierslogo {
+width: 600px;
+-webkit-transform: translateX(25%);
+-moz-transform: translateX(25%);
+-ms-transform: translateX(25%);
+transform: translateX(25%);
+}
+
+.guildlogo{
+width: 90px;
+}
+
+.drapeslogo {
+width: 130px;
+float: right;
+-webkit-transform: translateY(-80px);
+-moz-transform: translateY(-80px);
+-ms-transform: translateY(-80px);
+transform: translateY(-80px);
+}
+
+.trigger {
+display:none;
+}
+
+.pink {
+color: #D20070;
+}
+
+.pink:hover{
+color: #31539B;
+}
+
+.smallscreen {
+display: none;
+}
+
+.me a{
+text-decoration: none;
+color: inherit;
+}
+
+.central {
+text-align: center;
+}
+
+.subscribe input {
+width: 90px;
+
+}
+
+
+
+@media screen and (max-width: 868px) {
+
+
+	.main-image {
+		margin: 0 10px;
+	width: auto;
+
+	}
+
+	.writing {
+		width: 400px;
+	}
+
+	.homepage {
+		margin-top: 15px;
+	}
+
+	.hometext {
+		width: 100%;
+	padding-bottom: 15px;
+	}
+
+	.photo-rotation {
+
+	  width: 100%;
+
+
+	}
+
+
+
+	span.state-full span {
+	font-size: 16px;
+	}
+
+	h2 {
+		margin-top: 10px;
+	}
+
+	.supplierslogo {
+		max-width: 300px;
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	}
+
+	.writing {
+	width: 400px;
+	}
+	.privacy {
+	top: 80px;
+	}
+
+	.headernum a{
+text-align: left;
+
+	}
+	.headernum{
+	-webkit-transform: translateY(70px);
+	-moz-transform: translateY(70px);
+	-ms-transform: translateY(70px);
+	transform: translateY(70px);
+	left: 0;
+	}
+	.footernum {
+	top: 40px;
+	}
+
+
+	.networking {
+	padding: 0 0 5px 0;
+	}
+
+	.networking img {
+	width: 40px;
+	margin: 2px 1px;
+	padding: 3px;
+	}
+
+	.map iframe{
+	max-width: 100%;
+	}
+
+	.video iframe {
+	max-width: 100%;
+	}
+
+	.container {
+	/*to show some of the grey background*/
+	margin: 0 15px;
+	}
+
+	p {
+	padding: 0 25px 10px 25px;
+	}
+
+
+	figure {
+	width: 150px;
+	border-radius: 75px;
+	padding: 0 5px;
+	}
+
+	.drapeslogo {
+	display: none;
+	}
+
+	.main-image{
+	position: relative;
+	}
+
+	.offset-by-eight{
+	display: none;
+	}
+
+	.smallscreen {
+	display: inline-block;
+	margin-top: 360px;
+	}
+
+	.guildlogo{
+	position: absolute;
+	width: 60px;
+	-webkit-transform: translateY(-60px);
+	-moz-transform: translateY(-60px);
+	-ms-transform: translateY(-60px);
+	transform: translateY(-60px);
+	}
+	span.state-full span {
+
+	font-size: 14px;
+
+	}
+
+
+.social {
+	display: none;
+}
+header {
+	position: static;
+	box-shadow: none;
+	text-align: center;
+	margin-bottom: 4px;
+}
+	}
+
+
+@media screen and (max-width:750px) {
+
+	span.state-full span {
+		font-size: 12px;
+	}
+	
+	.trigger{
+		display: block;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+		width: 70px;
+		cursor: pointer;
+	}
+	nav {
+		display: none;
+		margin-top: 20px;
+	}
+
+	nav a{
+		padding: 3px;
+		margin: 9px;
+		display: inline;
+	}
+
+	.emailsent {
+		margin-top: 10px;
+	}
+	}
+
+@media screen and (max-width: 567px){
+	.copyVAT {
+		text-align: right;
+		-webkit-transform: translateY(30px);
+		-moz-transform: translateY(30px);
+		-ms-transform: translateY(30px);
+		transform: translateY(30px);
+	}
+	.writing {
+		width: 285px;
+	}
+
+
+	}
+
+@media screen and (max-width:595px){
+	span.state-full span {
+	  position: absolute;
+		top: 15%;
+		left: 10%;
+		width: 80%;
+		font-size: 12px;
+
+	  text-align: center;
+	}
+
+	}
+
+	@media screen and (max-width:418px){
+		.copyVAT {
+			margin-top: 0;
+		}
+
+		.privacy, .copyVAT {
+			-webkit-transform: translateY(-60px);
+			-moz-transform: translateY-60px);
+			-ms-transform: translateY(-60px);
+			transform: translateY(-60px);
+		}
+	}
+
+@media screen and (max-width: 468px) {
+
+
+	.privacy {
+		-webkit-transform: translateY(2px);
+		-moz-transform: translateY2px);
+		-ms-transform: translateY(2px);
+		transform: translateY(2px);
+	}
+
+	span.state-full span {
+		font-size: 20px;
+top:30%;
+	}
+	.writing {
+		width: 280px;
+	}
+
+	.emailus {
+
+	-webkit-transform: translateX(50px);
+	-moz-transform: translateX(50px);
+	-ms-transform: translateX(50px);
+	transform: translateX(50px);
+	}
+
+	.footernum {
+	-webkit-transform: translateY(40px);
+	-moz-transform: translateY(40px);
+	-ms-transform: translateY(40px);
+	transform: translateY(40px);
+	}
+	.networking {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	}
+	.networking img {
+	width: 40px;
+
+	}
+
+	.hometext {
+	margin-top: -100px;
+	}
+
+	h1 {
+	line-height: 60px;
+	width: 100px;
+	}
+
+	.headernum a{
+	display: block;
+	text-align: left;
+
+	}
+
+	.headernum {
+	-webkit-transform: translateY55px);
+	-moz-transform: translateY(55px);
+	-ms-transform: translateY(55px);
+	transform: translateY(55px);
+
+	}
+	.main-image {
+	margin-top: 30px;
+	}
+
+	nav {
+	margin-top:35px;
+
+	}
+	header{ margin-bottom: 20px;}
+	}
+
+.margin-top{
+		margin-top: 45px;
+	}
+
+@media screen and (max-width: 320px) {
+	.writing {
+		width:230px;
+	}
+	.guildlogo{
+		left: -20px;
+	}
+
+
+	}
